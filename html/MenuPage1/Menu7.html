@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cơm gà áp chào sốt Teriyaki</title>
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/menu_thanh_phan.css">
+  <link rel="stylesheet" href="/css/menu.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/filekihieu/themify-icons-font/themify-icons/themify-icons.css">
+
+  <script src="https://kit.fontawesome.com/98e143d97a.js" crossorigin="anonymous"></script>
+
+  <script src="/Javascript/Addtocart (1).js"></script>
+  <script src="/Javascript/Find.js"></script>
+  <script defer src="/Javascript/LoginLogout.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div id="dau">
+      <div class="container">
+        <header class="header">
+          <!--LOGO CUA  WEB-->
+          <div id="logo">
+            <a href="/html/home.html"><img src="/img/home/ibuki-restaurant-logo (1).png" width="200spx"></a>
+          </div>
+          <!--END-->
+          <!--DANH SACH CAC TRANG WEB-->
+          <ul id="ds">
+            <li><a href="/html/home.html"><i class="ti-home"></i></a></li>
+            <li><a href="/html/gioithieu.html">Giới thiệu</a></li>
+            <li><a href="/html/chuongtrinh.html">Chương Trình</a></li>
+            <li><a href="/html/DatBan.html">Đặt bàn</a></li>
+            <li>
+              <a href="/html/MenuPage1/MenuPage1.html">
+                Menu
+              </a>
+            <li>
+              <a href="#" onclick="show()"><i class="kinh-lup ti-search"></i></a>
+            </li>
+            <li>
+              <a href="#" onclick="showcart()"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+            <li class="user-login">
+              <a href="#" onclick="dangnhap();"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li class="user-logout" style="display: none;">
+              <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+            </li>
+          </ul>
+        </header>
+      </div>
+      <!--END DANH SACH-->
+      <!--search-->
+      <div id="list_button">
+        <ul class="ds_button">
+          <li>
+            <a href="https://www.facebook.com/ibukirestaurant/"><i class="button ti-facebook"></i></a>
+            <ul class="minhhoa">
+              <li>IBUKI</li>
+            </ul>
+          </li>
+          <li>
+            <a href="/html/MenuPage1/MenuPage1.html"><i class="button ti-book"></i></a>
+            <ul class="minhhoa">
+              <li>MENU</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="button ti-headphone-alt"></i></a>
+            <ul class="minhhoa">
+              <li>ĐT</li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com/maps/place/New+World+Saigon+Hotel/@10.7796084,106.6745395,14z/data=!4m9!3m8!1s0x31752f3e8eddf565:0x2ab6e5fe92c2e5d7!5m2!4m1!1i2!8m2!3d10.7710502!4d106.6947526!16s%2Fg%2F1tf_dxq8"><i
+                class="button ti-location-pin"></i></a>
+            <ul class="minhhoa">
+              <li>MAP</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="showcart">
+
+      <div class="cart">
+        <table>
+          <tr>
+            <th>Hình</th>
+            <th>Tên món ăn</th>
+            <th>Đơn giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+            <th>Xóa</th>
+          </tr>
+          <tbody id="mycart">
+
+          </tbody>
+          <script>
+            showmycart_loadtrang();
+
+          </script>
+
+        </table>
+      </div>
+
+      <br>
+      <a href="/html/thanhtoan.html">Thanh toán</a>
+      <button onclick="Xoatatca()">Xóa tất cả</button>
+
+    </div>
+
+    <div class="product-main">
+      <div class="product-img">
+        <img src="https://ibuki.vn/wp-content/uploads/2021/10/Com-ga-ap-chao-sot-Teriyaki-500x500.jpg">
+      </div>
+      <div class="product-item">
+        <h1>Cơm gà áp chào sốt Teriyaki</h1>
+        <div class="is-divider-small"></div>
+        <p class="price">180.000₫</p>
+        <p class="info">
+          Món gà áp chảo sốt Teriyaki hòa cùng nước sốt đậm đà theo hương vị Nhật Bản, là một món ăn cực ngon và hấp
+          dẫn.
+          <br>Hotline: 0898 188 388
+        </p>
+        <span class="category">
+          Category: Delivery Menu
+        </span>
+      </div>
+    </div>
+    <div class="product-information">
+      <div class="description"> description</div>
+      <div class="product-description">
+        <p>
+          Món gà áp chảo sốt Teriyaki hòa cùng nước sốt đậm đà theo hương vị Nhật Bản, là một món ăn cực ngon và hấp
+          dẫn.
+        </p>
+        <p>
+          Teriyaki bắt nguồn từ danh từ “teri” có nghĩa là sự tỏa sáng – nói đến nước bóng trên món ăn và “yaki” có
+          nghĩa là nướng. Theo phương pháp truyền thống, miếng thịt được nhúng hoặc phết với nước xốt vài lần trong khi
+          đang chế biến. Sốt Teriyaki mang vị mặn ngọt đặc trưng của Nhật Bản, thường được dùng trong các món thịt,
+          cá nướng hoặc chiên, nhằm tạo màu sắc sáng bóng, ngon mắt cho món ăn. Thành phần chính của Teriyaki
+          gồm: Xì dầu, rượu nấu ngọt mirin, rượu sake và đường.
+        </p>
+        <p>
+          Dùng kèm với cơm trắng
+        </p>
+        <p>
+          Phục vụ kèm Salad hoặc súp Miso
+        </p>
+        <ul>
+          <li><em>Giá đã bao gồm VAT</em></li>
+          <li><em>Vui lòng order trước ít nhất 90 phút để IBUKI chuẩn bị nguyên liệu chế biến và phục vụ chu đáo</em>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!--footer-->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="footer-infor">
+            <div class="footer-about footer-item">
+              <h3 class="footer-item-title">
+                VỀ IBUKI RESTAURANT
+              </h3>
+              <p class="footer-about-desc">
+                IBUKI (Làn gió mới) tự hào mang đến trải nghiệm ẩm thực đặc sắc, với tham vọng định nghĩa lại phong
+                cách thưởng thức Teppanyaki trọn ph
+                ong vị Nhật, dành cho thực khách Việt Nam.
+                <a href="/html/gioithieu.html">| <i>Xem thêm</i></a>
+              </p>
+            </div>
+
+            <div class="footer-about footer-item">
+              <h3 class="footer-item-title">
+                THÔNG TIN LIÊN HỆ
+              </h3>
+              <ul class="footer-item-list">
+                <li>IBUKI Teppanyaki Restaurant</li>
+                <hr>
+                <li>Lầu 1, The New World Hotel</li>
+                <hr>
+                <li>76 Lê Lai, Quận 1, TP. HCM</li>
+                <hr>
+                <li>Hotline: 089 818 8388</li>
+                <hr>
+                <li>Email: info@ibuki.vn</li>
+                <hr>
+                <li>Website: <a href="/html/home.html">https://ibuki.vn</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-contact footer-item">
+              <h3 class="footer-item-title">
+                LIÊN KẾT NHANH
+              </h3>
+              <ul class="footer-item-list">
+                <li>Delivery Menu</li>
+                <hr>
+                <li><a href="/html/MenuPage1/MenuPage1.html">Menu</a></li>
+                <hr>
+                <li><a href="/html/DatBan.html">Đặt bàn</a></li>
+                <hr>
+                <li><a href="/html/chuongtrinh.html">Chương trình</a></li>
+                <hr>
+                <li><a href="/html/gioithieu.html">Blog IBUKI</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-coppyright">
+            <p>Copyright 2022 © IBUKI. All rights reserved.</p>
+            <p>1st Floor, New World Hotel, 76 Le Lai Str., Dist.1, Hochiminh City | Book Now 089 818 8388</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <div class="modal" id="idmodal" style="display: none">
+    <div class="modal_body" id="mdbd">
+      <div class="topnddgnh">
+        <div class="modal-heading">
+          <div class="daux" onclick="dongdangnhap();">X</div>
+          <span>Sign in</span>
+        </div>
+      </div>
+      <br>
+      <div style=" justify-content: center;
+      align-items: center;
+      text-align: center;">
+        <input type="text" value="" id="iduser" placeholder="  User Name">
+        <input type="password" value="" id="idpass" placeholder="  Password">
+        <button class="dgnh" onclick="Login();">Login</button>
+        <br>
+        <br>
+        <div class="dgk"> Create account ?: <a href="#" class="dgk_1" onClick="modangki();">Create</a></div>
+      </div>
+    </div>
+
+    <div class="dangki1" id="iddangki" style="display: none">
+      <form name="frmdk" action="" method="get" onsubmit="return ktdangky()">
+        <div class="topdangki">
+          <a href="#">
+            <div class="daux" onclick="dongdangnhap();">X</div>
+            <span>Create</span>
+          </a>
+          <div>
+            <input type="text" value="" id="fullname" placeholder="  Full Name">
+            <input type="text" value="" id="userAddress" placeholder="  Address">
+            <input type="text" value="" id="userPhone" placeholder="  Phone Number">
+            <input type="text" value="" id="userName" placeholder="  UserName">
+            <input type="password" value="" id="userPass" placeholder="  Password">
+            <input type="password" value="" id="userPass2" placeholder="  Password Again">
+            <!-- <button class="dgnh" onclick="dangky()">Đăng Kí</button> -->
+            <input type="submit" class="dgnh" value="Create"></input>
+            <div class="dgk"> You have account ? : <a href="#" class="dgk_1" onClick="dangnhap();">Sign in</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

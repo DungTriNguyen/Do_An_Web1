@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script defer src="/Javascript/LoginLogout.js"></script>
+  <script src="/Javascript/Addtocart (1).js"></script>
+
+  <link rel="stylesheet" href="/css/chuongtrinh.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/header.css">
+
+  <link rel="stylesheet" href="/filekihieu/themify-icons-font/themify-icons/themify-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/filekihieu/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <title>chuongtrinh</title>
+</head>
+
+<body>
+  <div id="dau">
+    <div class="container">
+      <header class="header">
+        <!--LOGO CUA  WEB-->
+        <div id="logo">
+          <a href="home.html"><img src="/img/datban/ibuki-restaurant-logo.png" width="200spx"></a>
+        </div>
+        <!--END-->
+        <!--DANH SACH CAC TRANG WEB-->
+        <ul id="ds">
+          <li><a href="home.html"><i class="ti-home"></i></a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="chuongtrinh.html">Chương Trình</a></li>
+          <li><a href="DatBan.html">Đặt bàn</a></li>
+          <li>
+            <a href="/html/MenuPage1/MenuPage1.html">
+              Menu
+              <!-- <i class="mui-ten ti-angle-down"></i> -->
+            </a>
+
+          </li>
+          <li>
+            <i class="kinh-lup ti-search"></i>
+          </li>
+          <li>
+            <a href="#" onclick="showcart();"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          <li class="user-login">
+            <a href="#" onclick="dangnhap();"><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li class="user-logout" style="display: none;">
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <!--END DANH SACH-->
+    <!--search-->
+    <div id="list_button">
+      <ul class="ds_button">
+        <li>
+          <a href="https://www.facebook.com/ibukirestaurant/"><i class="button ti-facebook"></i></a>
+          <ul class="minhhoa">
+            <li>IBUKI</li>
+          </ul>
+        </li>
+        <li>
+          <a href="/html/MenuPage1/MenuPage1.html"><i class="button ti-book"></i></a>
+          <ul class="minhhoa">
+            <li>MENU</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><i class="button ti-headphone-alt"></i></a>
+          <ul class="minhhoa">
+            <li>ĐT</li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/maps/place/New+World+Saigon+Hotel/@10.7796084,106.6745395,14z/data=!4m9!3m8!1s0x31752f3e8eddf565:0x2ab6e5fe92c2e5d7!5m2!4m1!1i2!8m2!3d10.7710502!4d106.6947526!16s%2Fg%2F1tf_dxq8"><i
+              class="button ti-location-pin"></i></a>
+          <ul class="minhhoa">
+            <li>MAP</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="showcart">
+
+    <div class="cart">
+      <table>
+        <tr>
+          <th>Hình</th>
+          <th>Tên món ăn</th>
+          <th>Đơn giá</th>
+          <th>Số lượng</th>
+          <th>Thành tiền</th>
+          <th>Xóa</th>
+        </tr>
+        <tbody id="mycart">
+
+        </tbody>
+        <script>
+          showmycart_loadtrang();
+
+        </script>
+
+      </table>
+    </div>
+
+    <br>
+    <a href="/html/thanhtoan.html">Thanh toán</a>
+    <button onclick="Xoatatca()">Xóa tất cả</button>
+
+  </div>
+  <div class="container">
+    <div class="headwed">
+      <h1 class="head1 head1--title">
+        CATEGORY ARCHIVES: KHUYẾN MÃI
+      </h1>
+    </div>
+    <!--1-->
+    <div class="bodywed">
+      <div class="bodwed1">
+        <div class="body1">
+          <h6 class="body1 ctkm">CHƯƠNG TRÌNH, KHUYẾN MÃI</h6>
+          <h2 class="body1 qtgh">[QUÀ TẶNG GIỚI HẠN] TẶNG 01 KHI THỰC KHÁCH GỌI 02 SET TEPPANYAKI TỪ “BỘ BA KỲ QUAN”
+            KOBE - MATSUSAKA - TAKAMORI</h2>
+          <div class="body1 block"></div>
+          <div class="body1 meta">
+            <span>
+              POSTED ON NOVEMBER 5, 2021
+            </span>
+            <span>
+              BY
+            </span>
+            <span>
+              IBUKI RESTAURANT
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="bodywed2">
+        <div class="body2--image">
+          <img class="image" src="/img/chuongtrinh/Ibuki_Promo_Nov21_100-768x768.jpg">
+        </div>
+        <div class="body2 documen">
+          Từ ngày 01/11/2021, IBUKI tặng 100 phần “Gọi 2 tặng 1” set Teppanyaki từ 3 loại thịt: Kobe - Matsusaka -
+          Takamori. Chúng tôi gọi top 3 thương hiệu thịt bò danh tiếng này là <em>Masterpiece in Masterpiece</em>, bởi
+          những câu chuyện huyền thoại được lưu truyền theo năm tháng ở xứ sở Mặt trời mọc.<br>
+          - Thịt bò <strong>Kobe</strong> có bề dày lịch sử thuộc tỉnh Hyogo, vị ngon và hương thơm hoà quyện nhịp
+          nhàng, béo ngậy mịn màng, tan chảy trong miệng. Nhiều chính khách, ngôi sao thế giới khi đến Nhật đều nhất
+          định phải thưởng thức món thịt bò <Strong>Kobe</Strong>, là cực phẩm không thể bỏ qua. Hiện nay, tại Nhật chỉ
+          có khoảng 260 trang trại tại vùng Kansai đạt tiêu chuẩn để chăn nuôi bò Kobe theo những quy trình nghiêm ngặt.
+          Mỗi năm số lượng bò Kobe được xuất xưởng chỉ khoảng 5.000 con. Chất lượng thịt sau khi chế biến phải đạt 4-5
+          sao theo thứ hạng (được gọi hạng A4, A5). Tại IBUKI, thịt bò Kobe được nhập trực tiếp từ Nhật theo tiêu chuẩn
+          cao nhất, và tinh chọn các phần cắt phù hợp để chế biến Teppanyaki.<br>
+          - Thịt bò <strong>Matsusaka</strong> từ quận Mie trứ danh, từ các cô bò trinh nguyên được nuôi dưỡng bởi đậu
+          nành, lúa mì, lúa mạch,… tạo ra độ mềm mịn như lụa trong từng thớ thịt với kết cấu vân mỡ như một tác phẩm
+          nghệ thuật. “Bò lá ngọc cành vàng” cũng là biệt hiệu mà các nhà ẩm thực ưu ái dành cho giống bò này. Nếu một
+          con bò bình thường chỉ được nuôi trong 600 ngày, thì bò <strong>Matsusaka</strong> được nuôi tới 900 ngày, với
+          phong cách “sống chậm”, thức ăn cũng được điều chỉnh tùy theo thể trạng, số tuần tuổi từng con. Chính vì quá
+          trình nuôi dưỡng cầu kỳ, nên bò <strong>Matsusaka</strong> có phần thịt ngon tự nhiên, thuần khiết. Riêng tại
+          Ibuki, <strong>Matsusaka</strong> đã đạt đến độ vân mỡ BMS 12, mức độ đẹp hoàn hảo và bậc nhất.<br>
+
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      Posted in CHƯƠNG TRÌNH, KHUYẾN MÃI
+    </div>
+    <!--2-->
+    <div class="bodywed">
+      <div class="bodwed1">
+        <div class="body1">
+          <h6 class="body1 ctkm">KHUYẾN MÃI</h6>
+          <h2 class="body1 qtgh">Tháng 11/2020 - Ưu đãi Mua 1 tặng 1 thịt bò Matsusaka đắt nhất thế giới</h2>
+          <div class="body1 block"></div>
+          <div class="body1 meta">
+            <span>
+              POSTED ON MAY 27, 2021
+            </span>
+            <span>
+              BY
+            </span>
+            <span>
+              WEBADMIN
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="bodywed2">
+        <div class="body2--image">
+          <img class="image" src="/img/chuongtrinh/uu-dai-bo-matsusaka.jpg">
+        </div>
+        <div class="body2 documen">
+          Ưu đãi Mua 1 tặng 1 thịt bò Matsusaka đắt nhất thế giới Combo 1: Tinh Túy Từ Đất Bò Matsusaka Gan ngỗng Nấm
+          truffle Các loại rau củ quả từ Nhật như chanh Yuzu, dâu, lê, táo… 4,990,000 đ ++ Set 8 món | Tặng thêm 1 set
+          Combo 2: Tinh Hoa Từ Biển Cá<br>
+          Combo 1: Tinh Túy Từ Đất
+          <ul>
+            <li>Bò Matsusaka</li>
+            <li>Gan ngỗng</li>
+            <li>Nấm truffle</li>
+            <li>Các loại rau củ quả từ Nhật như chanh Yuzu, dâu, lê, táo…</li>
+          </ul>
+          <em class="gt">4,990,000 đ ++ Set 8 món | Tặng thêm 1 set</em><br>
+          Combo 2: Tinh Hoa Từ Biển
+          <ul>
+            <li>Cá ngừ vây xanh (Chutoro)</li>
+            <li>Cá hồng (Madai)</li>
+            <li>Gan cá chày (Ankimo)</li>
+            <li>Nhím biển/ Cầu gai (Uni)</li>
+            <li>Sò điệp (Hotate)</li>
+            <li>Trứng cá hồi (Ikura)</li>
+          </ul>
+          <em class="gt">4,990,000 đ ++ Set 8 món | Tặng thêm 1 set</em>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      Posted in CHƯƠNG TRÌNH, KHUYẾN MÃI
+    </div>
+    <!--3-->
+    <div class="bodywed">
+      <div class="bodwed1">
+        <div class="body1">
+          <h6 class="body1 ctkm">KHUYẾN MÃI</h6>
+          <h2 class="body1 qtgh">55% Off bò Kobe hảo hạng</h2>
+          <div class="body1 block"></div>
+          <div class="body1 meta">
+            <span>
+              POSTED ON MAY 26, 2021
+            </span>
+            <span>
+              BY
+            </span>
+            <span>
+              WEBADMIN
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="bodywed2">
+        <div class="body2--image">
+          <img class="image" src="/img/chuongtrinh/bo-uc-discount-55.jpg">
+        </div>
+        <div class="body2 documen">
+          <div id="tao">
+            <div><img class="po" src="/img/chuongtrinh/promotion-01.png"></div>
+            <div class="popo">
+              <div>100g Kobe A5 Sirloin</div>
+              <div>100g Wagyu Nhật A5 Sirloin</div>
+              <div>100g Wagyu Nhật A4 Sirloin</div>
+              <div class="mo">Phù hợp với nhóm 3-4 khách</div>
+              <div class="sized"><u><i>6,600,000 đ ++</i></u></div>
+              <div class="sized"><u><i>3,100,000 đ ++</i></u></div>
+            </div>
+            <div><img class="po" src="/img/chuongtrinh/promotion-02.png"></div>
+            <div class="popo">
+              <div>100g Kobe A5 Sirloin</div>
+              <div>100g Wagyu Nhật A5 Sirloin</div>
+              <div>100g Wagyu Nhật A4 Sirloin</div>
+              <div class="mo">Phù hợp với nhóm 3-4 khách</div>
+              <div class="sized"><u><i>6,600,000 đ ++</i></u></div>
+              <div class="sized"><u><i>3,100,000 đ ++</i></u></div>
+            </div>
+          </div>
+          <div>
+            <div class="off">55% Off bò Kobe hảo hạng</div>
+            <div class="thele"><strong>Thể lệ chương trình</strong></div>
+            <ol>
+              <li>Giá trên chưa bao gồm 5% phí dịch vụ & 10% thuế VAT.</li>
+              <li>Chương trình diễn ra đến hết 30/09/2021 hoặc có thể kết thúc sớm hơn vì số lượng có hạn.</li>
+              <li>Khách hàng vẫn được tham gia các chương trình khuyến mãi khác theo quy định của nhà hàng.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      Posted in CHƯƠNG TRÌNH, KHUYẾN MÃI
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="footer-infor">
+            <div class="footer-about footer-item">
+              <h3 class="footer-item-title">
+                VỀ IBUKI RESTAURANT
+              </h3>
+              <p class="footer-about-desc">
+                IBUKI (Làn gió mới) tự hào mang đến trải nghiệm ẩm thực đặc sắc, với tham vọng định nghĩa lại phong
+                cách thưởng thức Teppanyaki trọn ph
+                ong vị Nhật, dành cho thực khách Việt Nam.
+                <a href="gioithieu.html">| <i>Xem thêm</i></a>
+              </p>
+            </div>
+
+            <div class="footer-about footer-item">
+              <h3 class="footer-item-title">
+                THÔNG TIN LIÊN HỆ
+              </h3>
+              <ul class="footer-item-list">
+                <li>IBUKI Teppanyaki Restaurant</li>
+                <hr>
+                <li>Lầu 1, The New World Hotel</li>
+                <hr>
+                <li>76 Lê Lai, Quận 1, TP. HCM</li>
+                <hr>
+                <li>Hotline: 089 818 8388</li>
+                <hr>
+                <li>Email: info@ibuki.vn</li>
+                <hr>
+                <li>Website: <a href="home.html">https://ibuki.vn</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-contact footer-item">
+              <h3 class="footer-item-title">
+                LIÊN KẾT NHANH
+              </h3>
+              <ul class="footer-item-list">
+                <li>Delivery Menu</li>
+                <hr>
+                <li><a href="/html/MenuPage1/MenuPage1.html">Menu</a></li>
+                <hr>
+                <li><a href="DatBan.html">Đặt bàn</a></li>
+                <hr>
+                <li><a href="chuongtrinh.html">Chương trình</a></li>
+                <hr>
+                <li><a href="gioithieu.html">Blog IBUKI</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-coppyright">
+            <p>Copyright 2022 © IBUKI. All rights reserved.</p>
+            <p>1st Floor, New World Hotel, 76 Le Lai Str., Dist.1, Hochiminh City | Book Now 089 818 8388</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="modal" id="idmodal" style="display: none">
+    <div class="modal_body" id="mdbd">
+      <div class="topnddgnh">
+        <div class="modal-heading">
+          <div class="daux" onclick="dongdangnhap();">X</div>
+          <span>Sign in</span>
+        </div>
+      </div>
+      <br>
+      <div style=" justify-content: center;
+      align-items: center;
+      text-align: center;">
+        <input type="text" value="" id="iduser" placeholder="  User Name">
+        <input type="password" value="" id="idpass" placeholder="  Password">
+        <button class="dgnh" onclick="Login();">Login</button>
+        <br>
+        <br>
+        <div class="dgk"> Create account ?: <a href="#" class="dgk_1" onClick="modangki();">Create</a></div>
+      </div>
+    </div>
+
+    <div class="dangki1" id="iddangki" style="display: none">
+      <form name="frmdk" action="" method="get" onsubmit="return ktdangky()">
+        <div class="topdangki">
+          <a href="#">
+            <div class="daux" onclick="dongdangnhap();">X</div>
+            <span>Create</span>
+          </a>
+          <div>
+            <input type="text" value="" id="fullname" placeholder="  Full Name">
+            <input type="text" value="" id="userAddress" placeholder="  Address">
+            <input type="text" value="" id="userPhone" placeholder="  Phone Number">
+            <input type="text" value="" id="userName" placeholder="  UserName">
+            <input type="password" value="" id="userPass" placeholder="  Password">
+            <input type="password" value="" id="userPass2" placeholder="  Password Again">
+            <input type="submit" class="dgnh" value="Create"></input>
+            <div class="dgk"> You have account ? : <a href="#" class="dgk_1" onClick="dangnhap();">Sign in</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>

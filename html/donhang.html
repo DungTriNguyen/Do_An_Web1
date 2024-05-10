@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet"  href="/css/header.css"> -->
+    <link rel="stylesheet" href="/css/donhang.css">
+    <link rel="stylesheet" href="/filekihieu/themify-icons-font/themify-icons/themify-icons.css">
+    <script src="https://kit.fontawesome.com/98e143d97a.js" crossorigin="anonymous"></script>
+    <script src="/Javascript/Addtocart (1).js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!--header-->
+        <div id="dau">
+            <div class="container">
+                <header class="header">
+                    <!--LOGO CUA  WEB-->
+                    <div id="logo">
+                        <a href="home.html"><img src="/img/datban/ibuki-restaurant-logo.png" width="200spx"></a>
+                    </div>
+                    <!--END-->
+                    <!--DANH SACH CAC TRANG WEB-->
+                    <ul id="ds">
+                        <li><a href="home.html"><i class="ti-home"></i></a></li>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="chuongtrinh.html">Chương Trình</a></li>
+                        <li><a href="DatBan.html">Đặt bàn</a></li>
+                        <li>
+                            <a href="/html/MenuPage1/MenuPage1.html">
+                                Menu
+                            </a>
+
+                        </li>
+                        <li class="user-login">
+                            <a href="#" onclick="dangnhap();"><i class="fa-solid fa-user"></i></a>
+                        </li>
+                        <li class="user-logout" style="display: none;">
+                            <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+                        </li>
+                    </ul>
+                </header>
+            </div>
+            <!--END DANH SACH-->
+            <!--search-->
+            <div id="list_button">
+                <ul class="ds_button">
+                    <li>
+                        <a href="https://www.facebook.com/ibukirestaurant/"><i class="button ti-facebook"></i></a>
+                        <ul class="minhhoa">
+                            <li>IBUKI</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/html/MenuPage1/MenuPage1.html"><i class="button ti-book"></i></a>
+                        <ul class="minhhoa">
+                            <li>MENU</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="button ti-headphone-alt"></i></a>
+                        <ul class="minhhoa">
+                            <li>ĐT</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/New+World+Saigon+Hotel/@10.7796084,106.6745395,14z/data=!4m9!3m8!1s0x31752f3e8eddf565:0x2ab6e5fe92c2e5d7!5m2!4m1!1i2!8m2!3d10.7710502!4d106.6947526!16s%2Fg%2F1tf_dxq8"><i
+                                class="button ti-location-pin"></i></a>
+                        <ul class="minhhoa">
+                            <li>MAP</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="thongtinnhanhang">
+            <h3>THÔNG TIN ĐƠN HÀNG</h3>
+            <div id="thongtinnhanhang">
+
+            </div>
+            <div id="showcart">
+                <table>
+                    <tr>
+                        <th>Hình</th>
+                        <th>Tên món ăn</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                    <tbody id="mycart">
+
+                    </tbody>
+
+
+                </table>
+            </div>
+            <button onclick="hoantat()">HOÀN TẤT</button>
+        </div>
+        <script>
+            showthongtinnguoidung();
+            showmycart_loadtrang();
+
+        </script>
+    </div>
+
+
+</body>
+
+</html>

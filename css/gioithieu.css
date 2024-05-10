@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+   /*---------------------------------------------------hai slider-----------------------------------------------------------------------------*/
+#slider1, #slider2{
+    background-color:black;
+    height: 600px;
+    width: 1200px;
+}
+
+#slider1 h2, #slider2 h2{
+        color: rgb(231, 177, 93);
+        text-align:  center;
+        /* padding: 0px 23px;
+        padding-bottom: 70px; */
+        font-family: "Playfair Display", sans-serif;
+        justify-content: center;
+}
+.col-inner_1, .col-inner_2{
+    height: 500px;
+    width: 520.82px;
+    float: left;
+    text-align: justify;
+}
+.col-inner_1 p ,.col-inner_2 p{
+    color: white;
+    font-size: 15px;
+    padding-bottom: 20px;
+    line-height: 1.6;
+
+ 
+}
+img{
+    object-fit: cover;
+}
+#image_1, #image_2{
+    background-color: blue;
+    height: 400px;
+    width: 625px;
+    margin-left: 51px;
+  
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+ #show_1, #show_2{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;/*ease-in-out- chỉ định một hiệu ứng chuyển tiếp với bắt đầu và kết thúc chậm*/
+}
+#show_1:hover, #show_2:hover{
+    transform: scale(1.1);/* phong to anh len 10%*/
+}
+/*nut ben trai*/
+#image_1 .left-slider1, #image_2 .left-slider2{
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    color: white;
+    font-size: 30px;
+}
+/*nut ben phai*/
+#image_1 .right-slider1, #image_2 .right-slider2{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    color: white;
+    font-size: 30px;
+}
+#image_1 .right-slider1:hover, #image_1 .left-slider1:hover , 
+#image_2 .left-slider2:hover, #image_2 .right-slider2:hover{
+    color: goldenrod;
+}
+
+/* center */
+
+
+.center-title h2{
+    /* color:rgb(231, 177, 93);
+    text-align: center;
+    font-family: "Playfair Display", sans-serif; */
+    color: rgb(231, 177, 93);
+    text-align:  center;
+    /* padding: 0px 23px;
+    padding-bottom: 70px; */
+    font-family: "Playfair Display", sans-serif;
+    justify-content: center;
+}
+#row{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 50px;
+
+}
+.row a{
+    color:white;
+    text-decoration: none ;
+}
+.mgr{
+    margin-right: 5%;
+}
+
+.colorc {
+    color: white;
+}
+.mgb20{
+    margin-bottom: 20px;
+    
+}
+.box1{
+    width: 40%;
+    overflow: hidden    ;
+}
+.box1 img{
+    width: 100%;
+}
+.box1:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.box2{
+    width: 60%;
+    line-height: 1.5;
+    font-size: 15px;
+
+}
+.title{
+    border-top: 2px solid #ffffff33;
+  /* border-top: 2px solid rgba(255, 255, 255, 0.5); */
+  margin: 100px 0;
+  /* height: 100px; */
+  position: relative;
+  }
+.title-text{
+    position: absolute;
+    color: rgb(231, 177, 93);
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    padding: 16px 24px;
+    background-color: #000;
+    font-family: "Playfair Display", sans-serif;
+}

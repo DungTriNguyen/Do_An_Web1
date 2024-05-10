@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.55;
+    box-sizing: border-box;
+    background-color: black;
+    color: #fff;
+    /* margin-left: 60px;
+    margin-right: 60px; */
+    font-family: "Raleway", sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+h2,h6 {
+    margin: 0;
+    font-family: "Playfair Display", sans-serif;
+}
+
+
+.headwed{
+    font-family: "Playfair Display", sans-serif;
+    text-align: center;
+    font-size: 10px;
+}
+
+.ctkm {
+    margin-top: 50px;
+    color: #999;
+}
+
+.block {
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: #999;
+    margin: 10px 0 10px 0;
+}
+
+.meta {
+    
+    font-size: 12px;
+    color: rgb(211, 208, 208);
+}
+
+.bodywed2{
+    display: flex;
+    gap: 0 24px;
+}
+
+.image {
+    max-width: 100%;
+    width: 100%;
+    width: 420px;
+    height: 420px;
+    flex: 1;
+    margin-top: 5px;
+    
+}
+
+.documen {
+    flex: 1;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.foot {
+   
+    font-size: .8em;
+    border-top: 1px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 0.5em 0 0.6em;
+    margin-top: 32px;;
+}
+
+
+.gt {
+    border-left: 5px solid #b58350;
+    padding-left: 10px;
+}
+
+#tao {
+    display: flex;
+    justify-content: space-around;
+}
+
+.po {
+    width: 180px;
+}
+
+.popo {
+    line-height: 2.0;
+}
+
+.mo {
+    color: #999;
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+}
+
+.sized {
+    font-size: 20px;
+}
+
+.off {
+    margin-left: 10px;
+}
+
+.thele {
+    margin-left: 10px;
+    font-size: 30px;
+}

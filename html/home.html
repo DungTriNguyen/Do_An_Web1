@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/home.css">
+
+    <link rel="stylesheet" href="/filekihieu/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/filekihieu/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="/Javascript/conteiner2.js"></script>
+    <script defer src="/Javascript/DatBan.js"></script>
+    <script defer src="/Javascript/LoginLogout.js"></script>
+    <script src="/Javascript/Addtocart (1).js"></script>
+    <title>HOME</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="dau">
+                <div class="container">
+                    <header class="header">
+                        <!--LOGO CUA  WEB-->
+                        <div id="logo">
+                            <a href="home.html"><img src="/img/datban/ibuki-restaurant-logo.png" width="200spx"></a>
+                        </div>
+                        <!--END-->
+                        <!--DANH SACH CAC TRANG WEB-->
+                        <ul id="ds">
+                            <li><a href="home.html"><i class="ti-home"></i></a></li>
+                            <li><a href="gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="chuongtrinh.html">Chương Trình</a></li>
+                            <li><a href="DatBan.html">Đặt bàn</a></li>
+                            <li>
+                                <a href="/html/MenuPage1/MenuPage1.html">
+                                    Menu
+                                    <!-- <i class="mui-ten ti-angle-down"></i> -->
+                                </a>
+                                <!-- <ul class="dsphu">
+                            <li><a href="">Beef</a></li>
+                            <li><a href="">Chicken</a></li>
+                            <li><a href="">Meat</a></li>
+                          </ul> -->
+                            </li>
+                            <li>
+                                <i class="kinh-lup ti-search"></i>
+                            </li>
+                            <li>
+                                <a href="#" onclick="showcart()"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li class="user-login">
+                                <a href="#" onclick="dangnhap();"><i class="fa-solid fa-user"></i></a>
+                            </li>
+                            <li class="user-logout" style="display: none;">
+                                <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+                            </li>
+                        </ul>
+                    </header>
+                </div>
+                <!--END DANH SACH-->
+                <!--search-->
+                <div id="list_button">
+                    <ul class="ds_button">
+                        <li>
+                            <a href="https://www.facebook.com/ibukirestaurant/"><i class="button ti-facebook"></i></a>
+                            <ul class="minhhoa">
+                                <li>IBUKI</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/html/MenuPage1/MenuPage1.html"><i class="button ti-book"></i></a>
+                            <ul class="minhhoa">
+                                <li>MENU</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="button ti-headphone-alt"></i></a>
+                            <ul class="minhhoa">
+                                <li>ĐT</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.google.com/maps/place/New+World+Saigon+Hotel/@10.7796084,106.6745395,14z/data=!4m9!3m8!1s0x31752f3e8eddf565:0x2ab6e5fe92c2e5d7!5m2!4m1!1i2!8m2!3d10.7710502!4d106.6947526!16s%2Fg%2F1tf_dxq8"><i
+                                    class="button ti-location-pin"></i></a>
+                            <ul class="minhhoa">
+                                <li>MAP</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div id="showcart">
+
+                <div class="cart">
+                    <table>
+                        <tr>
+                            <th>Hình</th>
+                            <th>Tên món ăn</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th>Xóa</th>
+                        </tr>
+                        <tbody id="mycart">
+
+                        </tbody>
+                        <script>
+                            showmycart_loadtrang();
+
+                        </script>
+
+                    </table>
+                </div>
+
+                <br>
+                <a href="/html/thanhtoan.html">Thanh toán</a>
+                <button onclick="Xoatatca()">Xóa tất cả</button>
+
+            </div>
+        </header>
+        <div class="content">
+            <div class="content1">
+                <div class="slideShow-textSlideShow">
+                    <div class="slideShow">
+                        <img class="img-slideShow" src="/img/home/Customers-teppanyaki-ibuki-01 (1).jpg" alt="">
+                        <img class="img-slideShow" src="/img/home/teppanyaki-ibuki-02.jpg" alt="">
+                        <img class="img-slideShow" src="/img/home/KOBE_WEB-BANNER-1024x513.png" alt="">
+                        <img class="img-slideShow" src="/img/home/FB-2-1-600x600.png" alt="">
+                        <img class="img-slideShow" src="/img/home/web-banner_1920x1280px-1024x683.png" alt="">
+                        <img class="img-slideShow" src="/img/home/IBUKI-BOOKING-NOW-1024x513 (1).jpg" alt="">
+                        <div class="textSlideShow">
+                            <div class="title-text-content1">
+                                <h3 class="title">
+                                    <span>Phong vị Nhật Bản</span>
+                                    <span>Chạm đỉnh cảm quan</span>
+
+                                </h3>
+                                <p class="text">
+                                    World Class Sourcing Dining
+                                </p>
+                            </div>
+                            <div class="link-content1">
+                                <div class="link1">
+                                    <a href="/html/MenuPage1/MenuPage1.html">DELIVERY MENU</a>
+                                </div>
+
+                                <div class="link2">
+                                    <a href="DatBan.html">BOOKING</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <script>
+                    var myIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("img-slideShow");
+                        // console.log(x);
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) { myIndex = 1 }
+                        x[myIndex - 1].style.display = "block";
+                        setTimeout(carousel, 5000); // Change image every 2 seconds
+                    }
+                </script>
+            </div>
+
+
+            <div class="content2">
+                <div class="col inner1">
+                    <h4>
+                        Since
+                    </h4>
+                    <h1>
+                        2019
+                    </h1>
+                </div>
+                <div class="col inner2">
+                    <h1>
+
+                        +100
+                    </h1>
+                    <h4>
+                        MÓN ĂN
+                    </h4>
+                </div>
+                <div class="col inner3">
+                    <div class="text">
+                        <h1>
+                            GOLD PRIZE
+                        </h1>
+                        <p>
+                            "Best F&B Design"
+                            <br>
+                            IDEA Interior Design Excellence
+                            <br>
+                            Awards 2020
+                        </p>
+                    </div>
+                </div>
+                <div class="col inner4">
+                    <div class="content-col-inner4">
+                        <h4>Là thành viên</h4>
+                        <div class="img-col-inner4">
+                            <img src="/img/home/logo-kobe-beef.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content3">
+                <!-- <div class="slideShow-content3">
+                    <img src="/img/home/ibuki-restaurant01.jpg" alt="">
+                    <img src="/img/home/Chef-performance-pepper-seasoning-512x768.jpg" alt="">
+                    <img src="/img/home/Customers-teppanyaki-ibuki-01 (1).jpg" alt="">
+                </div>
+                <div class="text-content3">
+
+                </div> -->
+                <div class="row">
+                    <div class="box1">
+                        <img id="show_1" src="/img/home/ibuki-restaurant01.jpg">
+                        <i class="left ti-arrow-circle-left" onclick="prev_1()"></i>
+                        <i class="right ti-arrow-circle-right" onclick="next_1()"></i>
+                    </div>
+                    <div class="box2">
+                        <h6>
+                            IBUKI TEPANYAKI RESTAURANT
+                        </h6>
+                        <h2>
+                            Trọn phong vị Nhật
+                        </h2>
+                        <p>
+                            Đúng với tên gọi của mình, IBUKI (có nghĩa là ngọn gió mới) tự hào mang đến trải nghiệm ẩm
+                            thực đặc sắc với tham vọng định nghĩa lại phong cách thưởng thức Teppanyaki của thực khách
+                            Việt.
+                        </p>
+                        <p>
+                            IBUKI Nghệ thuật Teppanyaki tại IBUKI đảm bảo là sự hài hòa giữa bốn chuẩn mực:
+                        </p>
+                        <ul>
+                            <li>Hương vị chân phương đúng điệu</li>
+                            <li>Nghệ thuật nấu nướng đỉnh cao</li>
+                            <li>Tính cân bằng trong món ăn mỗi set menu Teppanyaki</li>
+                            <li>Không gian sang trọng mang đậm phong vị Nhật Bản</li>
+                        </ul>
+                        <a href="gioithieu.html">Xem thêm <i class="ti-arrows-corner"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content4">
+                <div class="title-content4">
+                    <span>DELIVERY MENU</span>
+                    <h2>World Class Sourcing Dining at Your Home</h2>
+                </div>
+                <div class="container-content4">
+                    <div class="infor img1">
+                        <div class="image">
+                            <img src="/img/home/Kobe-1-300x300.jpg" alt="">
+                        </div>
+                        <div class="text-infor-image">
+                            <p>Lẩu Shabu shabu/ Sukiyaki từ Thăn ngoại bò Kobe (1 khách/ pax – 100gr thịt)</p>
+                            <span><b>2.090.000₫</b></span>
+                            <a href="/html/MenuPage1/MenuPage1.html">VIEW MORE</a>
+                        </div>
+                    </div>
+                    <div class="infor img1">
+                        <div class="image">
+                            <img src="/img/home/Hotpot-300x300.jpg" alt="">
+                        </div>
+                        <div class="text-infor-image">
+                            <p>Lẩu Shabu shabu/ Sukiyaki từ Thăn ngoại bò Tỉ phú 2GR wagyu Úc (4 khách/ pax , 400gr
+                                thịt)</p>
+                            <span><b>2.950.000₫</b></span>
+                            <a href="/html/MenuPage1/MenuPage1.html">VIEW MORE</a>
+                        </div>
+                    </div>
+                    <div class="infor img1">
+                        <div class="image">
+                            <img src="/img/home/Set-lau-nuong-bo-My-300x300.jpg" alt="">
+                        </div>
+                        <div class="text-infor-image">
+                            <p>Lẩu Shabu shabu/ Sukiyaki/ Nướng BBQ từ Thăn ngoại thịt bò Mỹ (4 khách/ pax, 400gr thịt)
+                            </p>
+                            <span><b>1.350.000₫</b></span>
+                            <a href="/html/MenuPage1/MenuPage1.html">VIEW MORE</a>
+                        </div>
+                    </div>
+                    <div class="infor img1">
+                        <div class="image">
+                            <img src="/img/home/Set-lau-Heo-Hokkaido-300x300.jpg" alt="">
+                        </div>
+                        <div class="text-infor-image">
+                            <p>Lẩu Shabu shabu/ Nướng BBQ từ thịt heo Hokkaido (2 khách/ pax, 300gr thịt)</p>
+                            <span><b>780.000₫</b></span>
+                            <a href="/html/MenuPage1/MenuPage1.html">VIEW MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content5">
+                <div class="content5">
+                    <div class="textcenter">
+                        <font>
+                            <h2>Phong vị Nhật Bản</h2>
+                        </font>
+                    </div>
+                    <div class="fourimage">
+                        <div class="image"><a href="/html/MenuPage1/MenuPage1.html"><img
+                                    src="/img/home/Grand-Menu01.jpg"></a></div>
+                        <div class="image"><a href="/html/MenuPage1/MenuPage1.html"><img
+                                    src="/img/home/page-menu-01-01.jpg"></a></div>
+                        <div class="image"><a href="/html/MenuPage1/MenuPage1.html"><img
+                                    src="/img/home/page-menu-01-04.jpg"></a></div>
+                        <div class="image"><a href="/html/MenuPage1/MenuPage1.html"><img
+                                    src="/img/home/page-menu-04-06-1536x1536.jpg"></a></div>
+                    </div>
+                    <div class="information">
+                        <div class="infor">
+                            <h4>Grand Menu</h4>
+                        </div>
+                        <div class="infor">
+                            <h4>Teppanyaki Menu</h4>
+                        </div>
+                        <div class="infor">
+                            <h4>Delivery</h4>
+                        </div>
+                        <div class="infor">
+                            <h4>Catering</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-infor">
+                        <div class="footer-about footer-item">
+                            <h3 class="footer-item-title">
+                                VỀ IBUKI RESTAURANT
+                            </h3>
+                            <p class="footer-about-desc">
+                                IBUKI (Làn gió mới) tự hào mang đến trải nghiệm ẩm thực đặc sắc, với tham vọng định
+                                nghĩa
+                                lại phong
+                                cách thưởng thức Teppanyaki trọn ph
+                                ong vị Nhật, dành cho thực khách Việt Nam.
+                                <a href="gioithieu.html">| <i>Xem thêm</i></a>
+                            </p>
+                        </div>
+
+                        <div class="footer-about footer-item">
+                            <h3 class="footer-item-title">
+                                THÔNG TIN LIÊN HỆ
+                            </h3>
+                            <ul class="footer-item-list">
+                                <li>IBUKI Teppanyaki Restaurant</li>
+                                <hr>
+                                <li>Lầu 1, The New World Hotel</li>
+                                <hr>
+                                <li>76 Lê Lai, Quận 1, TP. HCM</li>
+                                <hr>
+                                <li>Hotline: 089 818 8388</li>
+                                <hr>
+                                <li>Email: info@ibuki.vn</li>
+                                <hr>
+                                <li>Website: <a href="home.html">https://ibuki.vn</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-contact footer-item">
+                            <h3 class="footer-item-title">
+                                LIÊN KẾT NHANH
+                            </h3>
+                            <ul class="footer-item-list">
+                                <li>Delivery Menu</li>
+                                <hr>
+                                <li><a href="/html/MenuPage1/MenuPage1.html">Menu</a></li>
+                                <hr>
+                                <li><a href="DatBan.html">Đặt bàn</a></li>
+                                <hr>
+                                <li><a href="chuongtrinh.html">Chương trình</a></li>
+                                <hr>
+                                <li><a href="gioithieu.html">Blog IBUKI</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-coppyright">
+                        <p>Copyright 2022 © IBUKI. All rights reserved.</p>
+                        <p>1st Floor, New World Hotel, 76 Le Lai Str., Dist.1, Hochiminh City | Book Now 089 818 8388
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <div class="modal" id="idmodal" style="display: none">
+        <div class="modal_body" id="mdbd">
+            <div class="topnddgnh">
+                <div class="modal-heading">
+                    <div class="daux" onclick="dongdangnhap();">X</div>
+                    <span>Sign in</span>
+                </div>
+            </div>
+            <br>
+            <div style=" justify-content: center;
+            align-items: center;
+            text-align: center;">
+                <input type="text" value="" id="iduser" placeholder="  User Name">
+                <input type="password" value="" id="idpass" placeholder="  Password">
+                <button class="dgnh" onclick="Login();">Login</button>
+                <br>
+                <br>
+                <div class="dgk"> Create account ?: <a href="#" class="dgk_1" onClick="modangki();">Create</a></div>
+            </div>
+        </div>
+
+        <div class="dangki1" id="iddangki" style="display: none">
+            <form name="frmdk" action="" method="get" onsubmit="return ktdangky()">
+                <div class="topdangki">
+                    <a href="#">
+                        <div class="daux" onclick="dongdangnhap();">X</div>
+                        <span>Create</span>
+                    </a>
+                    <div>
+                        <input type="text" value="" id="fullname" placeholder="  Full Name">
+                        <input type="text" value="" id="userAddress" placeholder="  Address">
+                        <input type="text" value="" id="userPhone" placeholder="  Phone Number">
+                        <input type="text" value="" id="userName" placeholder="  UserName">
+                        <input type="password" value="" id="userPass" placeholder="  Password">
+                        <input type="password" value="" id="userPass2" placeholder="  Password Again">
+                        <!-- <button class="dgnh" onclick="dangky()">Đăng Kí</button> -->
+                        <input type="submit" class="dgnh" value="Create"></input>
+                        <div class="dgk"> You have account ? : <a href="#" class="dgk_1" onClick="dangnhap();">Sign
+                                in</a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>

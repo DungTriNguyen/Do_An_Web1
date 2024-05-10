@@ -1,0 +1,657 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+   
+  }
+  body{
+  background-color: black;
+  }
+  /* .container {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0;
+    overflow: hidden;
+  
+  } */
+  .container .thongtinnhanhang h3{
+    color: #b58350;
+   
+  }
+  .container .thongtinnhanhang{
+    /* margin-top: 100px;
+    margin-left: 410px;
+    width: 600px; */
+    color: #fff;
+    background-color: black;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .thongtinnhanhang p{
+    width: 600px;
+    padding: 10px ;
+    color: #e7b15d
+  }
+  .container .thongtinnhanhang input{
+    width: 590px;
+    background: none;
+    color: #b58350;
+    border: 2px solid #b58350;
+    height: 30px;
+  }
+  .container #thongtinnhanhang {
+    color: #b58350;
+    height: 200px;
+  }
+  .container #thongtinnhanhang p{
+    width: 510px;
+    color: #fff;
+    padding-left: 0px;
+  }
+  .container #showcart{
+    margin-top: 100px;
+    
+    background-color: black;
+    color: #b58350;
+    width: 580px;
+    right: 0px;   
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid;
+  }
+  #showcart .cart{
+    height: 300px;
+    overflow-y: scroll;
+}
+  .container #showcart img{
+    height: 70px;
+    width: 70px;
+  }
+  .container #showcart th{
+    padding: 10px;
+  }
+  .container .thongtinnhanhang button{
+    font-size: .91em;
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background: none;
+    color: #b58350;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #b58350;
+    height: 30px;
+    cursor: pointer;
+  }
+  .container .thongtinnhanhang button:hover{
+    color: black;
+    background-color: #b58350;
+    border: 1px solid black;
+  }
+  /* header */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+  }
+  
+  /* .main {
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    display: block;
+  }  */
+  #dau {
+    width: 100%;
+    max-width:  100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0a0a0a;
+    z-index: 2;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #ds {
+    display: flex;
+  }
+  
+  #ds li {
+    position: relative;
+    list-style: none;
+    font-weight: 450;
+    
+  }
+  
+  
+  #ds>li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    transition: width 0.25s ease-out;
+  }
+  
+  #ds>li:hover::after {
+    width: 100%;
+  }
+  
+  #ds li a {
+    color: aliceblue;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 0 24px;
+    display: block;
+    text-transform: uppercase;
+  }
+  
+  /* #ds .mui-ten {
+    font-size: 10px;
+  } */
+  
+  #ds li:hover .dsphu {
+    display: block;
+  }
+  
+  #ds>li:hover>a,
+  #ds .dsphu>li:hover>a {
+    color: #e7b15d;
+  }
+  
+  /* #ds .dsphu {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+  } */
+  
+  
+  
+  #ds .kinh-lup {
+    font-size: 16px;
+    padding: 0 23px;
+    line-height: 70px;
+    color: aliceblue;
+    cursor: pointer;
+    display: block;
+  }
+  
+  #ds .kinh-lup:hover {
+    color: #e7b15d;
+  }
+  
+  /* #ds .fa-thin{
+    font-size: 16px;
+    padding: 0 23px;
+    line-height: 70px;
+    color: aliceblue;
+    cursor: pointer;
+    display: block;
+  }
+  #ds .fa-thin:hover {
+    color: #e7b15d;
+  } */
+  #ds .fa-solid{
+    font-size: 16px;
+    line-height: 70px;
+    color: aliceblue;
+    cursor: pointer;
+    display: block;
+  }
+  #ds .fa-solid:hover{
+    color: #e7b15d;
+  }
+  
+  /* loginlogout */
+  .modal {
+  opacity: 0.1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  font-family:"Playfair Display", sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  }
+  /* span{
+  color: #e7b15d;
+  font-size: 30px; 
+  padding-left: 25px
+  } */
+  .modal_body {
+  /* text-align: center; */
+  width: 300px;
+  height: 350px;
+  padding: 20px;
+  margin: auto;
+  /* border: solid 2px; */
+  border-radius: 10px;
+  background-color: #222;
+  z-index: 1;
+  font-size: 30px;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  .dgk {
+  font-size: 13px;
+  }
+  
+  .dgk_1 {
+  color: rgb(231, 177, 93);
+  }
+  
+  .dgk_1:hover {
+  font-size: 13px;
+  }
+  
+  input[type=text],
+  [type=password] {
+  width: 100%;
+  margin: 12px 0;
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+  }
+  
+  .dgnh {
+  height: 45px;
+  width: 100%;
+  margin: 10px 0px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0F0F0F;
+  color: white;
+  }
+  
+  .dgnh:hover {
+  font-size: 15px;
+  }
+  
+  .modal-heading {
+  position: relative;
+  }
+  
+  .modal-heading span{
+  display: block;
+  }
+  
+  .daux {
+  position: absolute;
+  color: #e7b15d;
+  z-index: 2;
+  }
+  
+  .daux:hover {
+  background-color: #8f321b;
+  }
+  
+  .topnddgnh {
+  padding-top: 10px;
+  height: 40px;
+  background-color: #222;
+  }
+  
+  .dangki1 {
+  text-align: center;
+  width: 300px;
+  height: 500px;
+  margin: auto;
+  border: solid 2px;
+  border-radius: 3px;
+  background-color: #222;
+  
+  }
+  
+  .topdangki {
+  height: 40px;
+  background-color: #222;
+  text-decoration: none;
+  }
+  
+  /* tabbar */
+  #list_button{
+  margin-top: 230px;
+  margin-left: 1300px;
+  margin-right: 0px;
+  z-index: 2;
+  position: fixed;
+  right: 1px;
+  width: 50px;
+  }
+  
+  .ds_button > li {
+  list-style-type: none;
+  line-height: 50px;/*khoang cach giua cach hang*/
+  background-color: #b58350;
+  margin-bottom: 5px;/*khoang cach giua hai the li*/
+  border-radius: 10px;/*bo goc cau phan tu */
+  display: block;
+  cursor: pointer;
+  
+  }
+  
+  .ds_button >li >a{
+  color: #383838;
+  text-decoration: none;
+  padding-left: 15px;
+  }
+  .button{
+  font-size: 20px;
+  }
+  /*thong tin cho cac nut*/
+  .ds_button .minhhoa{/*an minhhoa di*/
+  display: none;
+  }
+  
+  .ds_button li:hover .minhhoa{ /* giup cho thong tin hien ra kia dua chuot vao the li*/
+  display: block;
+  }
+  
+  .ds_button .minhhoa  li{
+  text-align: center;
+  background-color: rgb(52, 48, 48);
+  color: goldenrod;
+  list-style-type: none;
+  }
+  
+  /*header  */
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .main {
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    display: block;
+  } 
+#dau {
+    width: 100%;
+    max-width:  100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0a0a0a;
+    z-index: 2;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #ds {
+    display: flex;
+  }
+
+  #ds li {
+    position: relative;
+    list-style: none;
+    font-weight: 450;
+    
+  }
+
+
+  #ds>li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    transition: width 0.25s ease-out;
+  }
+
+  #ds>li:hover::after {
+    width: 100%;
+  }
+
+  #ds li a {
+    color: aliceblue;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 0 24px;
+    display: block;
+    text-transform: uppercase;
+  }
+
+  /* #ds .mui-ten {
+    font-size: 10px;
+  } */
+
+  #ds li:hover .dsphu {
+    display: block;
+  }
+
+  #ds>li:hover>a,
+  #ds .dsphu>li:hover>a {
+    color: #e7b15d;
+  }
+
+  /* #ds .dsphu {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+  } */
+
+  
+
+  #ds .kinh-lup {
+    font-size: 16px;
+    padding: 0 23px;
+    line-height: 70px;
+    color: aliceblue;
+    cursor: pointer;
+    display: block;
+  }
+
+  #ds .kinh-lup:hover {
+    color: #e7b15d;
+  }
+  
+  /* #ds .fa-thin{
+    font-size: 16px;
+    padding: 0 23px;
+    line-height: 70px;
+    color: aliceblue;
+    cursor: pointer;
+    display: block;
+  }
+  #ds .fa-thin:hover {
+    color: #e7b15d;
+  } */
+  #ds .fa-solid{
+    font-size: 16px;
+    line-height: 70px;
+    color: aliceblue;
+    cursor: pointer;
+    display: block;
+  }
+  #ds .fa-solid:hover{
+    color: #e7b15d;
+  }
+  
+/* loginlogout */
+.modal {
+  opacity: 0.1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  font-family:"Playfair Display", sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* span{
+  color: #e7b15d;
+  font-size: 30px; 
+  padding-left: 25px
+} */
+.modal_body {
+  /* text-align: center; */
+  width: 300px;
+  height: 350px;
+  padding: 20px;
+  margin: auto;
+  /* border: solid 2px; */
+  border-radius: 10px;
+  background-color: #222;
+  z-index: 1;
+  font-size: 30px;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+}
+
+.dgk {
+  font-size: 13px;
+}
+
+.dgk_1 {
+  color: rgb(231, 177, 93);
+}
+
+.dgk_1:hover {
+  font-size: 13px;
+}
+
+input[type=text],
+[type=password] {
+  width: 100%;
+  margin: 12px 0;
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+}
+
+.dgnh {
+  height: 45px;
+  width: 100%;
+  margin: 10px 0px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0F0F0F;
+  color: white;
+}
+
+.dgnh:hover {
+  font-size: 15px;
+}
+
+.modal-heading {
+  position: relative;
+}
+
+.modal-heading span{
+  display: block;
+}
+
+.daux {
+  position: absolute;
+  color: #e7b15d;
+  z-index: 2;
+}
+
+.daux:hover {
+  background-color: #8f321b;
+}
+
+.topnddgnh {
+  padding-top: 10px;
+  height: 40px;
+  background-color: #222;
+}
+
+.dangki1 {
+  text-align: center;
+  width: 300px;
+  height: 500px;
+  margin: auto;
+  border: solid 2px;
+  border-radius: 3px;
+  background-color: #222;
+  
+}
+
+.topdangki {
+  height: 40px;
+  background-color: #222;
+  text-decoration: none;
+}
+
+/* tabbar */
+#list_button{
+  margin-top: 230px;
+  margin-left: 1300px;
+  margin-right: 0px;
+  z-index: 2;
+  position: fixed;
+  right: 1px;
+  width: 50px;
+}
+
+.ds_button > li {
+  list-style-type: none;
+  line-height: 50px;/*khoang cach giua cach hang*/
+  background-color: #b58350;
+  margin-bottom: 5px;/*khoang cach giua hai the li*/
+  border-radius: 10px;/*bo goc cau phan tu */
+  display: block;
+  cursor: pointer;
+  
+}
+
+.ds_button >li >a{
+  color: #383838;
+  text-decoration: none;
+  padding-left: 15px;
+}
+.button{
+  font-size: 20px;
+}
+/*thong tin cho cac nut*/
+.ds_button .minhhoa{/*an minhhoa di*/
+  display: none;
+}
+
+.ds_button li:hover .minhhoa{ /* giup cho thong tin hien ra kia dua chuot vao the li*/
+  display: block;
+}
+
+.ds_button .minhhoa  li{
+  text-align: center;
+  background-color: rgb(52, 48, 48);
+  color: goldenrod;
+  list-style-type: none;
+}

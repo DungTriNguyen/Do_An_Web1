@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cơm cuộn đặc biệt</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/menu_thanh_phan.css">
+    <link rel="stylesheet" href="/css/menu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/filekihieu/themify-icons-font/themify-icons/themify-icons.css">
+
+    <script src="https://kit.fontawesome.com/98e143d97a.js" crossorigin="anonymous"></script>
+
+    <script src="/Javascript/Addtocart (1).js"></script>
+    <script src="/Javascript/Find.js"></script>
+    <script defer src="/Javascript/LoginLogout.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="dau">
+            <div class="container">
+                <header class="header">
+                    <!--LOGO CUA  WEB-->
+                    <div id="logo">
+                        <a href="/html/home.html"><img src="/img/home/ibuki-restaurant-logo (1).png" width="200spx"></a>
+                    </div>
+                    <!--END-->
+                    <!--DANH SACH CAC TRANG WEB-->
+                    <ul id="ds">
+                        <li><a href="/html/home.html"><i class="ti-home"></i></a></li>
+                        <li><a href="/html/gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="/html/chuongtrinh.html">Chương Trình</a></li>
+                        <li><a href="/html/DatBan.html">Đặt bàn</a></li>
+                        <li>
+                            <a href="/html/MenuPage1/MenuPage1.html">
+                                Menu
+                            </a>
+                        <li>
+                            <a href="#" onclick="show()"><i class="kinh-lup ti-search"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="showcart()"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                        <li class="user-login">
+                            <a href="#" onclick="dangnhap();"><i class="fa-solid fa-user"></i></a>
+                        </li>
+                        <li class="user-logout" style="display: none;">
+                            <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+                        </li>
+                    </ul>
+                </header>
+            </div>
+            <!--END DANH SACH-->
+            <!--search-->
+            <div id="list_button">
+                <ul class="ds_button">
+                    <li>
+                        <a href="https://www.facebook.com/ibukirestaurant/"><i class="button ti-facebook"></i></a>
+                        <ul class="minhhoa">
+                            <li>IBUKI</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/html/MenuPage1/MenuPage1.html"><i class="button ti-book"></i></a>
+                        <ul class="minhhoa">
+                            <li>MENU</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="button ti-headphone-alt"></i></a>
+                        <ul class="minhhoa">
+                            <li>ĐT</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/New+World+Saigon+Hotel/@10.7796084,106.6745395,14z/data=!4m9!3m8!1s0x31752f3e8eddf565:0x2ab6e5fe92c2e5d7!5m2!4m1!1i2!8m2!3d10.7710502!4d106.6947526!16s%2Fg%2F1tf_dxq8"><i
+                                class="button ti-location-pin"></i></a>
+                        <ul class="minhhoa">
+                            <li>MAP</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="showcart">
+
+            <div class="cart">
+                <table>
+                    <tr>
+                        <th>Hình</th>
+                        <th>Tên món ăn</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th>Xóa</th>
+                    </tr>
+                    <tbody id="mycart">
+
+                    </tbody>
+                    <script>
+                        showmycart_loadtrang();
+
+                    </script>
+
+                </table>
+            </div>
+
+            <br>
+            <a href="/html/thanhtoan.html">Thanh toán</a>
+            <button onclick="Xoatatca()">Xóa tất cả</button>
+
+        </div>
+
+        <div class="product-main">
+            <div class="product-img">
+                <img src="https://ibuki.vn/wp-content/uploads/2021/10/Com-cuon-dac-biet-sushi-500x333.jpeg">
+            </div>
+            <div class="product-item">
+                <h1>Cơm cuộn đặc biệt</h1>
+                <div class="is-divider-small"></div>
+                <p class="price">180.000₫</p>
+                <p class="info">
+                    Cơm cuộn đặc biệt có 6 tùy chọn do đầu bếp IBUKI chế biến, tinh chọn từ các nguyên liệu chuẩn nguồn
+                    gốc. Là món ăn đại diện cho văn hóa và lịch sử ẩm thực của Nhật Bản. Trải qua thăng trầm lịch sử,
+                    món cơm cuộn này đã có những biến đổi không ngờ về hình thức và nội dung.
+                    <br>Hotline: 0898 188 388
+                </p>
+                <span class="category">
+                    Category: Delivery Menu
+                </span>
+            </div>
+        </div>
+        <div class="product-information" style="height: 700px;">
+            <div class="description"> description</div>
+            <div class="product-description">
+                <p>
+                    Cơm cuộn đặc biệt có 6 tùy chọn do đầu bếp IBUKI chế biến, tinh chọn từ các nguyên liệu chuẩn nguồn
+                    gốc. Là món ăn đại diện cho văn hóa và lịch sử ẩm thực của Nhật Bản. Trải qua thăng trầm lịch sử,
+                    món cơm cuộn này đã có những biến đổi không ngờ về hình thức và nội dung.
+                </p>
+                <p>
+                    Suốt thời kì cận đại khoảng những năm 1800, công thức sushi phổ biến hơn cả là Nigiri sushi – loại
+                    sushi cực đơn giản với chỉ một vắt cơm giấm và lát hải sản đặt lên trên, khác xa với sushi cuộn rong
+                    biển cầu kì bây giờ. Điều này gắn liền với những cuộc hành trình dài ngày của người “Eddoko” (cư dân
+                    Edo di chuyển tới Tokyo theo làn sóng đô thị hóa lúc bấy giờ) luôn ăn uống giản tiện và gọn gàng
+                </p>
+                <p>
+                    Sushi bắt đầu tiến gần đến ẩm thực thế giới bằng sự ra đời của các Uramaki – công thức sushi ban đầu
+                    không dùng rong biển mà chỉ có lớp cơm cuộn bên ngoài nhân, hình dàng thoạt nhìn giống như sushi
+                    Nhật chính gốc nhưng bản chất không khác cơm nắm là mấy. Loại Uramaki ngày nay nổi tiếng nhất chính
+                    là California roll vốn xuất hiện thường trực trong các thực đơn món Nhật, đặc biệt là ở nhà hàng
+                    Nhật ở nước ngoài.
+                </p>
+                <p>
+                    Cơm cuộn sushi có rất nhiều thành phần và công thức chế biến khác nhau, tuy nhiên nguyên liệu chính
+                    để làm nên món ngon này là cơm trộn dấm kết hợp với các loại thức ăn như cá sống, trứng cá, hải sản
+                    tươi sống, rau củ, wasabi (mù tạt)…
+                </p>
+                <p>
+                    Cơm cuộn đặc biệt do IBUKI chuẩn bị, chọn 01 loại trong 06 loại bên dưới:
+                </p>
+                <ul style="padding-left: 30px;">
+                    <li>
+                        California Roll: thanh cua, tôm, trứng cuộn & bơ, xà lách, dưa leo, mayonaise, tương ớt
+                    </li>
+                    <li>
+                        Shrimp Tempura Roll: tôm chiên, bơ, dưa leo, xà lách, mayonaise, tương ớt, mè đen
+                    </li>
+                    <li>
+                        Deep Fried Pork Cutlet Roll: thịt heo chiên xù, xà lách, bơ, dưa leo, mayonaise, tonkatsu sốt
+                    </li>
+                    <li>
+                        Chicken Teriyaki Roll: thịt gà sốt ngọt teri của nhật, dưa leo, bơ, xà lách, mè trắng
+                    </li>
+                    <li>
+                        Seared Salmon Roll: cá hồi, bơ, dưa leo, xà lách, mayonaise
+                    </li>
+                    <li>
+                        Futo Roll: thanh cua, trứng cuộn, bó xôi, tôm luộc, trứng cá chuồn, nấm đông cô kho
+                    </li>
+
+                </ul>
+                </li>
+                <p>
+                    Phục vụ kèm Salad hoặc súp Miso
+                </p>
+            </div>
+        </div>
+
+
+        <!--footer-->
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-infor">
+                        <div class="footer-about footer-item">
+                            <h3 class="footer-item-title">
+                                VỀ IBUKI RESTAURANT
+                            </h3>
+                            <p class="footer-about-desc">
+                                IBUKI (Làn gió mới) tự hào mang đến trải nghiệm ẩm thực đặc sắc, với tham vọng định
+                                nghĩa lại phong
+                                cách thưởng thức Teppanyaki trọn ph
+                                ong vị Nhật, dành cho thực khách Việt Nam.
+                                <a href="/html/gioithieu.html">| <i>Xem thêm</i></a>
+                            </p>
+                        </div>
+
+                        <div class="footer-about footer-item">
+                            <h3 class="footer-item-title">
+                                THÔNG TIN LIÊN HỆ
+                            </h3>
+                            <ul class="footer-item-list">
+                                <li>IBUKI Teppanyaki Restaurant</li>
+                                <hr>
+                                <li>Lầu 1, The New World Hotel</li>
+                                <hr>
+                                <li>76 Lê Lai, Quận 1, TP. HCM</li>
+                                <hr>
+                                <li>Hotline: 089 818 8388</li>
+                                <hr>
+                                <li>Email: info@ibuki.vn</li>
+                                <hr>
+                                <li>Website: <a href="/html/home.html">https://ibuki.vn</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-contact footer-item">
+                            <h3 class="footer-item-title">
+                                LIÊN KẾT NHANH
+                            </h3>
+                            <ul class="footer-item-list">
+                                <li>Delivery Menu</li>
+                                <hr>
+                                <li><a href="/html/MenuPage1/MenuPage1.html">Menu</a></li>
+                                <hr>
+                                <li><a href="/html/DatBan.html">Đặt bàn</a></li>
+                                <hr>
+                                <li><a href="/html/chuongtrinh.html">Chương trình</a></li>
+                                <hr>
+                                <li><a href="/html/gioithieu.html">Blog IBUKI</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-coppyright">
+                        <p>Copyright 2022 © IBUKI. All rights reserved.</p>
+                        <p>1st Floor, New World Hotel, 76 Le Lai Str., Dist.1, Hochiminh City | Book Now 089 818 8388
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <div class="modal" id="idmodal" style="display: none">
+        <div class="modal_body" id="mdbd">
+            <div class="topnddgnh">
+                <div class="modal-heading">
+                    <div class="daux" onclick="dongdangnhap();">X</div>
+                    <span>Sign in</span>
+                </div>
+            </div>
+            <br>
+            <div style=" justify-content: center;
+            align-items: center;
+            text-align: center;">
+                <input type="text" value="" id="iduser" placeholder="  User Name">
+                <input type="password" value="" id="idpass" placeholder="  Password">
+                <button class="dgnh" onclick="Login();">Login</button>
+                <br>
+                <br>
+                <div class="dgk"> Create account ?: <a href="#" class="dgk_1" onClick="modangki();">Create</a></div>
+            </div>
+        </div>
+
+        <div class="dangki1" id="iddangki" style="display: none">
+            <form name="frmdk" action="" method="get" onsubmit="return ktdangky()">
+                <div class="topdangki">
+                    <a href="#">
+                        <div class="daux" onclick="dongdangnhap();">X</div>
+                        <span>Create</span>
+                    </a>
+                    <div>
+                        <input type="text" value="" id="fullname" placeholder="  Full Name">
+                        <input type="text" value="" id="userAddress" placeholder="  Address">
+                        <input type="text" value="" id="userPhone" placeholder="  Phone Number">
+                        <input type="text" value="" id="userName" placeholder="  UserName">
+                        <input type="password" value="" id="userPass" placeholder="  Password">
+                        <input type="password" value="" id="userPass2" placeholder="  Password Again">
+                        <!-- <button class="dgnh" onclick="dangky()">Đăng Kí</button> -->
+                        <input type="submit" class="dgnh" value="Create"></input>
+                        <div class="dgk"> You have account ? : <a href="#" class="dgk_1" onClick="dangnhap();">Sign
+                                in</a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

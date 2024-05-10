@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới tiệu IBUKI Restaurant</title>
+
+  <link rel="stylesheet" href="/css/gioithieu.css">
+  <link rel="stylesheet" href="/CSS/header.css">
+  <link rel="stylesheet" href="/CSS/footer.css">
+
+  <link rel="stylesheet" href="/filekihieu/themify-icons-font/themify-icons/themify-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/filekihieu/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/filekihieu/themify-icons-font/themify-icons/themify-icons.css">
+
+  <script src="/Javascript/slider1.js"></script>
+  <script src="/Javascript/Addtocart (1).js"></script>
+  <script defer src="/Javascript/LoginLogout.js"></script>
+
+</head>
+
+<body style="background-color: black;">
+  <div id="dau">
+    <div class="container">
+      <header class="header">
+        <!--LOGO CUA  WEB-->
+        <div id="logo">
+          <a href="home.html"><img src="/img/datban/ibuki-restaurant-logo.png" width="200spx"></a>
+        </div>
+        <!--END-->
+        <!--DANH SACH CAC TRANG WEB-->
+        <ul id="ds">
+          <li><a href="home.html"><i class="ti-home"></i></a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="chuongtrinh.html">Chương Trình</a></li>
+          <li><a href="DatBan.html">Đặt bàn</a></li>
+          <li>
+            <a href="/html/MenuPage1/MenuPage1.html">
+              Menu
+              <!-- <i class="mui-ten ti-angle-down"></i> -->
+            </a>
+
+          </li>
+          <li>
+            <i class="kinh-lup ti-search"></i>
+          </li>
+          <li>
+            <a href="#" onclick="showcart();"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          <li class="user-login">
+            <a href="#" onclick="dangnhap();"><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li class="user-logout" style="display: none;">
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <!--END DANH SACH-->
+    <!--search-->
+    <div id="list_button">
+      <ul class="ds_button">
+        <li>
+          <a href="https://www.facebook.com/ibukirestaurant/"><i class="button ti-facebook"></i></a>
+          <ul class="minhhoa">
+            <li>IBUKI</li>
+          </ul>
+        </li>
+        <li>
+          <a href="/html/MenuPage1/MenuPage1.html"><i class="button ti-book"></i></a>
+          <ul class="minhhoa">
+            <li>MENU</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><i class="button ti-headphone-alt"></i></a>
+          <ul class="minhhoa">
+            <li>ĐT</li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/maps/place/New+World+Saigon+Hotel/@10.7796084,106.6745395,14z/data=!4m9!3m8!1s0x31752f3e8eddf565:0x2ab6e5fe92c2e5d7!5m2!4m1!1i2!8m2!3d10.7710502!4d106.6947526!16s%2Fg%2F1tf_dxq8"><i
+              class="button ti-location-pin"></i></a>
+          <ul class="minhhoa">
+            <li>MAP</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="showcart">
+
+    <div class="cart">
+      <table>
+        <tr>
+          <th>Hình</th>
+          <th>Tên món ăn</th>
+          <th>Đơn giá</th>
+          <th>Số lượng</th>
+          <th>Thành tiền</th>
+          <th>Xóa</th>
+        </tr>
+        <tbody id="mycart">
+
+        </tbody>
+        <script>
+          showmycart_loadtrang();
+
+        </script>
+
+      </table>
+    </div>
+
+    <br>
+    <a href="/html/thanhtoan.html">Thanh toán</a>
+    <button onclick="Xoatatca()">Xóa tất cả</button>
+
+  </div>
+  <div class="container">
+    <!--slider 1-->
+    <div id="slider1">
+      <div class="title">
+        <div class="title-text">
+          <h2>TEPPANYAKI. KHÚC GIAO HÒA GIỮA NGHỆ THUẬT VÀ ẨM THỰC.</h2>
+        </div>
+      </div>
+      <!--doan thong tin cua khoi--->
+      <div class="col-inner_1">
+        <p>
+          Ra đời vào thế chiến thứ II,
+          Teppanyaki là bản hòa tấu tinh tế giữa tinh hoa ẩm thực Nhật Bản và nghệ thuật trình diễn phương Tây;
+          trong đó “teppan” có nghĩa là gang thép, và “yaki” là tên gọi chung của các món ăn được chế biến trên chảo.
+        </p>
+        <p>
+          Khi làn khói bắt đầu lan toả trên chiếc bàn nướng thép khổng lồ,
+          quyện theo hương thơm đặc trưng của từng nguyên liệu,
+          cũng là lúc người đầu bếp Teppanyaki thăng hoa với việc dùng những chiếc xẻng nấu ăn điêu luyện để chế biến ra
+          các món ăn tinh tế trong sự chăm chú,
+          ngưỡng mộ của thực khách.
+        </p>
+        <p>
+          Bí mật của phong cách ẩm thực này nằm ở bếp nướng teppan gồm tấm chảo phẳng,
+          đảm bảo nhiệt độ thống nhất trên toàn bề mặt, làm bốc hơi lượng nước dư thừa nhưng đồng
+          thời giữ lại được vị tinh túy của nguyên liệu tươi ngon.
+          Cùng với tài nghệ của đầu bếp, mỗi món ăn Teppanyaki xứng đáng là một kho báu để khám phá,
+          đưa cảm quan thực khách chạm đỉnh thăng hoa.
+        </p>
+      </div>
+      <!--hinh anh trong khoi-->
+      <div id="image_1">
+        <img id="show_1" src="/img/gioithieu/0.jpg">
+        <i class="left-slider1 ti-arrow-circle-left" onclick="prev_1()"></i>
+        <i class="right-slider1 ti-arrow-circle-right" onclick="next_1()"></i>
+      </div>
+    </div>
+    <!-- center -->
+    <div id="center">
+      <div class="title">
+        <div class="title-text">
+          <h2>
+            IBUKI. TRỌN PHONG VỊ NHẬT.
+          </h2>
+        </div>
+      </div>
+
+      <div id="row">
+        <div class="box1">
+          <img width="520px" align="left" src="/img/gioithieu/about-ibuki05-768x768.jpg " alt="IBUKI">
+        </div>
+        <div class="box2">
+          <div class="mgb20">
+            <font color="white">Đúng với tên gọi của mình, IBUKI (có nghĩa là ngọn gió mới) tự hào mang đến trải nghiệm
+              ẩm thực đặc sắc với tham vọng định nghĩa lại phong cách thưởng thức Teppanyaki của thực khách Việt.</font>
+          </div>
+          <div class="mgb20">
+            <font color="white">Nghệ thuật Teppanyaki tại IBUKI đảm bảo là sự hài hòa giữa bốn chuẩn mực:</font>
+          </div>
+          <div class="mgb20">
+            <ul>
+              <font color="white">
+                <li>
+                  <font>Hương vị chân phương đúng điệu</font> nhờ lối chế biến tinh gọn, cùng nguyên liệu tươi ngon,
+                  thượng hạng được nhập khẩu trực tiếp từ Nhật Bản và các nước tiên tiến trên thế giới như thịt bò Kobe,
+                  tôm hùm Canada, bào ngư Hàn Quốc, rau củ quả Nhật và Đà Lạt…
+                </li>
+              </font><br>
+              <font color="white">
+                <li>
+                  <font>Nghệ thuật nấu nướng đỉnh cao</font> được quản lý chặt chẽ và đầy đam mê bởi đầu bếp trứ danh
+                  Kamo Kohei có hơn 20 năm không ngừng học hỏi, sáng tạo và theo đuổi phong cách ẩm thực fusion với việc
+                  dung hoà và kết hợp các loại hình ẩm thực đặc trưng Á – Âu để cho ra những món ăn với hương vị vô cùng
+                  đặc biệt.
+                </li>
+              </font><br>
+              <font color="white">
+                <li>
+                  <font>Tính cân bằng trong món ăn</font> mỗi set menu Teppanyaki là sự kết hợp tinh tế và được tính
+                  toán khoa học về thứ tự các món, khẩu phần, nguyên liệu (hài hòa giữa các loại thịt/cá, rau/củ/quả,
+                  tinh bột)… Về hình thức, người đầu bếp phải rất tinh ý để sắp xếp các nguyên liệu trên chảo sao cho
+                  vừa vặn, hợp lý và đẹp mắt.
+                </li>
+              </font><br>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--slider 2-->
+    <div id="slider2">
+      <div class="title">
+        <div class="title-text">
+          <h2>CÁC GIẢI THƯỞNG VỀ KIẾN TRÚC</h2>
+        </div>
+      </div>
+      <!--doan thong tin cua khoi--->
+      <div class="col-inner_2">
+        <p>
+          2020 – GIẢI GOLD HẠNG MỤC BEST F&B DESIGN CỦA IDEA INTERIOR DESIGN EXCELLENCE AWARDS 2020.
+        </p>
+        <p>
+          2021 – ĐƯỢC VINH DANH GIẢI BEST F&B DESIGN TRONG TOP35 DỰ ÁN CỦA VMARK VIETNAM DESIGN AWARDS | INTERIOR 2020 –
+          2021
+        </p>
+        <p>
+          Niềm cảm hứng sáng tạo của KTS Kawaguchi Atsushi và các đồng sự dành cho IBUKI là
+          sự đổi mới, cách điệu từ các chất liệu đương đại, để thổi hồn tinh thần truyền thống
+          Nhật Bản vào từng khu vực của nhà hàng, kết hợp giữa triết lý WA (Một khái niệm văn
+          hóa Nhật Bản mang ý nghĩa về sự hoà hợp) và OKUYUKI (Chiều sâu),
+          mang đến một không gian ẩm thực mang đậm phong vị Nhật Bản, chạm đỉnh cảm quan.
+        </p>
+        <p>
+          Trong đó, ánh sáng là một ngôn ngữ độc đáo để thực khách có thể “đọc vị” được tinh
+          thần của IBUKI, tức Làn gió mới. Một mặt là sự làm chủ kỹ thuật cao nhất, và mặt khác là
+          sự trầm tư, sâu sắc của phong cách tinh giản. Điển hình, trong phòng VIP, ánh sáng
+          xuyên qua các tấm gỗ, mang theo sức sống của thiên nhiên, đạt đến độ sâu trong điểm
+          nhìn khi thực khách thưởng thức ẩm thực xứ Mặt trời mọc trong không gian ấm cúng này.
+        </p>
+
+      </div>
+      <!--hinh anh trong khoi-->
+      <div id="image_2">
+        <img id="show_2" src="/img/gioithieu/1.jpg">
+        <i class="left-slider2 ti-arrow-circle-left" onclick="prev_2()"></i>
+        <i class="right-slider2 ti-arrow-circle-right" onclick="next_2()"></i>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="footer-infor">
+            <div class="footer-about footer-item">
+              <h3 class="footer-item-title">
+                VỀ IBUKI RESTAURANT
+              </h3>
+              <p class="footer-about-desc">
+                IBUKI (Làn gió mới) tự hào mang đến trải nghiệm ẩm thực đặc sắc, với tham vọng định nghĩa lại phong
+                cách thưởng thức Teppanyaki trọn ph
+                ong vị Nhật, dành cho thực khách Việt Nam.
+                <a href="gioithieu.html">| <i>Xem thêm</i></a>
+              </p>
+            </div>
+
+            <div class="footer-about footer-item">
+              <h3 class="footer-item-title">
+                THÔNG TIN LIÊN HỆ
+              </h3>
+              <ul class="footer-item-list">
+                <li>IBUKI Teppanyaki Restaurant</li>
+                <hr>
+                <li>Lầu 1, The New World Hotel</li>
+                <hr>
+                <li>76 Lê Lai, Quận 1, TP. HCM</li>
+                <hr>
+                <li>Hotline: 089 818 8388</li>
+                <hr>
+                <li>Email: info@ibuki.vn</li>
+                <hr>
+                <li>Website: <a href="home.html">https://ibuki.vn</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-contact footer-item">
+              <h3 class="footer-item-title">
+                LIÊN KẾT NHANH
+              </h3>
+              <ul class="footer-item-list">
+                <li>Delivery Menu</li>
+                <hr>
+                <li><a href="/html/MenuPage1/MenuPage1.html">Menu</a></li>
+                <hr>
+                <li><a href="DatBan.html">Đặt bàn</a></li>
+                <hr>
+                <li><a href="chuongtrinh.html">Chương trình</a></li>
+                <hr>
+                <li><a href="gioithieu.html">Blog IBUKI</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-coppyright">
+            <p>Copyright 2022 © IBUKI. All rights reserved.</p>
+            <p>1st Floor, New World Hotel, 76 Le Lai Str., Dist.1, Hochiminh City | Book Now 089 818 8388</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="modal" id="idmodal" style="display: none">
+    <div class="modal_body" id="mdbd">
+      <div class="topnddgnh">
+        <div class="modal-heading">
+          <div class="daux" onclick="dongdangnhap();">X</div>
+          <span>Sign in</span>
+        </div>
+      </div>
+      <br>
+      <div style=" justify-content: center;
+      align-items: center;
+      text-align: center;">
+        <input type="text" value="" id="iduser" placeholder="  User Name">
+        <input type="password" value="" id="idpass" placeholder="  Password">
+        <button class="dgnh" onclick="Login();">Login</button>
+        <br>
+        <br>
+        <div class="dgk"> Create account ?: <a href="#" class="dgk_1" onClick="modangki();">Create</a></div>
+      </div>
+    </div>
+
+    <div class="dangki1" id="iddangki" style="display: none">
+      <form name="frmdk" action="" method="get" onsubmit="return ktdangky()">
+        <div class="topdangki">
+          <a href="#">
+            <div class="daux" onclick="dongdangnhap();">X</div>
+            <span>Create</span>
+          </a>
+          <div>
+            <input type="text" value="" id="fullname" placeholder="  Full Name">
+            <input type="text" value="" id="userAddress" placeholder="  Address">
+            <input type="text" value="" id="userPhone" placeholder="  Phone Number">
+            <input type="text" value="" id="userName" placeholder="  UserName">
+            <input type="password" value="" id="userPass" placeholder="  Password">
+            <input type="password" value="" id="userPass2" placeholder="  Password Again">
+            <input type="submit" class="dgnh" value="Create"></input>
+            <div class="dgk"> You have account ? : <a href="#" class="dgk_1" onClick="dangnhap();">Sign in</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

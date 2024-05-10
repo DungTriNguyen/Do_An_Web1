@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color: black; */
+    font-family: 'Raleway',sans-serif;
+    background-color: black;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+   
+}
+
+
+ #finding{
+  
+    width: 1160px;
+    height: 15px;
+    background: none;
+    color: #b58350;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #b58350;
+    border-radius: 30px;
+    display: none;
+}
+ .title{
+    color: #b58350;
+    text-align: center;
+    margin: 100px 0 30px 0px;
+    font-family: 'Playfair Display',sans-serif;
+    font-weight: 500;
+
+}
+ul.products{
+    max-width: 100%;  
+    display: flex;/*chuyen cac khung len cung 1 hang*/
+    flex-wrap: wrap;/*co the xuong hang*/
+    justify-content: space-evenly;/*dan theo hang ngang*/
+}
+
+ul.products li{
+    padding: 20px 0px;
+    text-align: center;
+    flex-basis: 33%;/*xac dinh do rong cua flex item*/
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;/*giu nguyen kich thuoc border de khi thay doi padding thi border khong bi thay doi*/
+}
+ul.products li img{
+    width: 100%;/*kich thuoc toi da bang khung*/
+    height: auto;
+    object-fit: cover;
+}
+ul.products li .product-top {
+    position: relative;
+    overflow: hidden;/*an phan nam ben ngoai class nay*/
+}
+ul.products li .product-top  .product-thumb{
+    display: block;
+}
+ul.products li .product-top  .product-thumb img{
+    display: block;
+}
+ul.products li .product-top  a.buy_now{
+    text-transform: uppercase;/*viet hoa cac chua cai*/
+    text-decoration: none;
+    display: block;
+    background-color: #b58350;
+    color: #FFF;
+    padding: 7px 0px;
+    bottom: -36px;
+    position: absolute;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+}
+ul.products li:hover a.buy_now{
+    bottom: 0px;
+}
+ul.products li .product-info{
+    padding: 10px 0px
+}
+ul.products li .product-info > p{
+    opacity: .7;
+    font-size: .75em;
+    color: #f1f1f1;
+    padding: 3px 0px;
+}
+ul.products li a.product-name {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 16px;
+    padding: 3px 0px;
+    height: 32px;
+    display: block;
+}
+.buy-amount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buy-amount p{
+    width: 30px;
+    color: #FFF;
+    font-size: .91em;
+}
+.buy-amount > input{
+    width: 50px;
+    background-color: black;
+    color: #FFF;
+    text-align: center;
+    border: 1px solid #b58350;
+}
+ul.products li .product-info .product-price {
+    font-size: 16px;
+    color: #f1f1f1;
+    font-weight: 600;
+    padding: 8px 0px;
+
+}
+
+ul.products li .product-info > button{
+    margin: 10px 12px;
+    height: 30px;
+    text-transform: uppercase;
+    border: #b58350 solid 3px;
+    padding: 0px 12px;
+    cursor: pointer;/*hien ban tay khi dua vao nut*/
+    color: #b58350;
+    background-color:black;
+}
+ul.products li .product-info button:hover{
+    background-color: #b58350;
+    color: #f1f1f1;
+}
+
+.list-page{
+    width: 50%;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    padding-left: 150px;
+}
+.list-page{
+    padding-left: 79px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item{
+    margin: 0px 15px;
+    width: 37px;
+    height: 37px;
+    background:none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFF;
+    cursor: pointer;
+}
+.list-page .item:hover{
+    background-color: #b58350;
+}
+.list-page .item a{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    padding-top: 13px;
+    padding-left: 1px;
+    text-align: center;
+}
+
+
